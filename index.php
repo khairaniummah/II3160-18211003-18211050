@@ -2,48 +2,13 @@
 error_reporting(E_ALL | E_STRICT);
 ini_set('display_errors', true);
 ini_set('auto_detect_line_endings', true);
-require_once('./Converter.php');
-$proc = new XsltProcessor;
-echo 'Untuk melihat tabel gunakan perintah dibawah ini<br>';
-echo 'Perintah1: http://localhost/?search=dataxml<br>';
-echo 'Perintah2: http://localhost/?search=datasql<br>';
-echo 'Perintah3: http://localhost/?search=datacsv<br>';
-$t = new Converter;
-if ($_GET["search"] == 'dataxml'){ //perintah: http://localhost/get.php?search=dataxml
-	$inputFile = 'Menu.xml';
-	$doc = new DOMDocument();
-	$doc->load('Menu.xsl');
-	$proc->importStylesheet($doc);
-	//$xml = file_get_contents($inputFile);
-	$doc2 = new DOMDocument();
-	$doc2->load($inputFile);
-	echo $proc->transformToXML($doc2);
-	//$xml = file_get_contents($inputFile);
 
-}
-else if ($_GET["search"] == 'datacsv'){ //perintah: http://localhost/get.php?search=datacsv
-	$convert = $t->csvConverter();
-	$inputFile = 'output.xml';
-	//$xml = file_get_contents($inputFile);
-	//echo $xml;
-	$doc = new DOMDocument();
-	$doc->load('output.xsl');
-	$proc->importStylesheet($doc);
-	//$xml = file_get_contents($inputFile);
-	$doc2 = new DOMDocument();
-	$doc2->load($inputFile);
-	echo $proc->transformToXML($doc2);
-}
 
-else if ($_GET["search"] == 'datasql'){ //perintah: http://localhost/get.php?search=datasql
-	$convert = $t->sqlConverter();
-	$doc = new DOMDocument();
-	$doc->load('datasql.xsl');
-	$proc->importStylesheet($doc);
-	$inputFile = 'datasql.xml';
-	//$xml = file_get_contents($inputFile);
-	$doc2 = new DOMDocument();
-	$doc2->load($inputFile);
-	echo $proc->transformToXML($doc2);
-}
-?>
+echo 'Untuk menampilkan tabel kelompok kami gunakan perintah klik tombol "Our Converter"'; echo '<p>';
+echo 'Untuk melihat semua tabel, klik tombol "Show All"';
+
+
+?><br>
+<input type="button" name="Ours" id="Our Converter" value="Our Converter" onclick="window.location ='punya_sendiri/'" /></td><br>
+<input type="button" name="All" id="Show All" value="Show All" onclick="window.location ='semua/'" /></td>
+
