@@ -3,31 +3,6 @@
 	ini_set('display_errors', true);
 	ini_set('auto_detect_line_endings', true);
 	ini_set('allow_url_fopen', 'on');
-	require_once('./Converter.php');
-$proc = new XsltProcessor;
-$t = new Converter;
-
-	$inputFile = 'Menu.xml';
-	$doc = new DOMDocument();
-	$doc->load('Menu.xsl');
-	$proc->importStylesheet($doc);
-	//$xml = file_get_contents($inputFile);
-	$doc2 = new DOMDocument();
-	$doc2->load($inputFile);
-	echo $proc->transformToXML($doc2);
-	$xml = file_get_contents($inputFile);
-	
-	$convert = $t->csvConverter();
-	$inputFile = 'output.xml';
-	//$xml = file_get_contents($inputFile);
-	//echo $xml;
-	$doc = new DOMDocument();
-	$doc->load('output.xsl');
-	$proc->importStylesheet($doc);
-	//$xml = file_get_contents($inputFile);
-	$doc2 = new DOMDocument();
-	$doc2->load($inputFile);
-	echo $proc->transformToXML($doc2);
 	
 	$file1 = "http://localhost/II3160-18211003-18211050/punya_sendiri/?search=menu";
 	$file2 = "http://localhost/II3160-18211003-18211050/punya_sendiri/?search=chat";
