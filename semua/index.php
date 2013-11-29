@@ -29,15 +29,6 @@ $t = new Converter;
 	$doc2->load($inputFile);
 	echo $proc->transformToXML($doc2);
 	
-	$convert = $t->sqlConverter();
-	$doc = new DOMDocument();
-	$doc->load('datasql.xsl');
-	$proc->importStylesheet($doc);
-	$inputFile = 'datasql.xml';
-	$xml = file_get_contents($inputFile);
-	$doc2 = new DOMDocument();
-	$doc2->load($inputFile);
-	echo $proc->transformToXML($doc2);	
 	
 	$dir1 = "http://localhost/BernadetteVina/csv.php";
 	$dir2 = "http://localhost/testPHP2/test.xml";
@@ -50,11 +41,11 @@ $t = new Converter;
 	$dir9 = "http://localhost/Progint/data/xml/1.xml";
 	$dir10 = "http://localhost/progin/contoh.xml";
 	$dir11 = "http://localhost/BernadetteVina/DataXML.xml";
-	$dir12 = "http://localhost/II3160-Pemrograman-Integratif/menu.xml";
-	$dir13 = "http://localhost/habib-andy/index.php/ws/menu/semua";
-	$dir14 = "http://localhost/Tugas1-Tugas2/tab2.xml";
-	$dir15 = "http://localhost/Protif/Protif/database/rumah.xml";
-	$dir16 = "http://localhost/Pemrograman-Intergratif/dbxml.xml";
+	$dir12 = "http://localhost/II3160-Tugas-18211011-18211053/index.php/search/korans";
+	$dir13 = "http://localhost/ningenis/II3160-Progin-18211002-18211033/getSelf.php?input=semua";
+	$dir14 = "http://localhost/pemrograman-integratif/artis.php";
+	$dir15 = "http://localhost/II3160-18211017-18211043/index.php/Api/xml_from_csv";
+	$dir16 = "http://localhost/Progint-yogidanang/?kolom=all";
 
     for($i=1; $i<17; $i++)
     {
