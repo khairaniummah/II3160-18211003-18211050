@@ -30,7 +30,7 @@ $t = new Converter;
 	echo $proc->transformToXML($doc2);
 	
 	
-	$dir1 = "http://sti-itb.org/BernadetteVina/csv.php";
+	$dir1 = "http://sti-itb.org/pemrograman-integratif/artis.php";
 	$dir2 = "http://sti-itb.org/testPHP2/test.xml";
 	$dir3 = "http://sti-itb.org/tugas-2-pemrograman-integratif/data3.xml";
 	$dir4 = "http://sti-itb.org/web-service/datasiswa.xml";
@@ -43,7 +43,7 @@ $t = new Converter;
 	$dir11 = "http://sti-itb.org/BernadetteVina/DataXML.xml";
 	$dir12 = "http://sti-itb.org/II3160-Tugas-18211011-18211053/index.php/search/korans";
 	$dir13 = "http://sti-itb.org/ningenis/II3160-Progin-18211002-18211033/getSelf.php?input=semua";
-	$dir14 = "http://sti-itb.org/pemrograman-integratif/artis.php";
+	$dir14 = "http://sti-itb.org/BernadetteVina/csv.php";
 	$dir15 = "http://sti-itb.org/II3160-18211017-18211043/index.php/Api/xml_from_csv";
 	$dir16 = "http://sti-itb.org/Progint-yogidanang/?kolom=all";
 	$dir17 = "http://sti-itb.org/18211037/RestWebService/index.php/api/Liverpool/players/format/xml";
