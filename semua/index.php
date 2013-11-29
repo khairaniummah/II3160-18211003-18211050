@@ -37,7 +37,7 @@ $t = new Converter;
 	$dir5 = "http://sti-itb.org/II3160--Pemrograman-Integratif-/DaftarIdol.xml";
 	$dir6 = "http://sti-itb.org/II3160-Tugas1-Tugas2/tab2.xml";
 	$dir7 = "http://sti-itb.org/IPT-Assignments/data2.xml";
-	$dir8 = "http://sti-itb.org/pemrograman_integratif/output.xml";
+	$dir8 = "http://sti-itb.org/pemrograman_integratif/informasi_xml.php?nim=all";
 	$dir9 = "http://sti-itb.org/Progint/data/xml/1.xml";
 	$dir10 = "http://sti-itb.org/progin/contoh.xml";
 	$dir11 = "http://sti-itb.org/BernadetteVina/DataXML.xml";
@@ -46,8 +46,13 @@ $t = new Converter;
 	$dir14 = "http://sti-itb.org/pemrograman-integratif/artis.php";
 	$dir15 = "http://sti-itb.org/II3160-18211017-18211043/index.php/Api/xml_from_csv";
 	$dir16 = "http://sti-itb.org/Progint-yogidanang/?kolom=all";
+	$dir17 = "http://sti-itb.org/18211037/RestWebService/index.php/api/Liverpool/players/format/xml";
+	$dir18 = "http://sti-itb.org/xmlconvert.php/pegawai";
+	$dir18 = "http://sti-itb.org/18211010-18211035/searchmhs.php?tag=all";
+	$dir18 = "http://sti-itb.org/18211014-dan-18211029/index.php";
+	
 
-    for($i=1; $i<17; $i++)
+    for($i=1; $i<19; $i++)
     {
 		$filename="dir".$i;
         $xml=simplexml_load_file($$filename);
