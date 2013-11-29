@@ -2,7 +2,6 @@
 error_reporting(E_ALL | E_STRICT);
 ini_set('display_errors', true);
 ini_set('auto_detect_line_endings', true);
-<<<<<<< HEAD
 
 
 echo 'Untuk menampilkan tabel kelompok kami gunakan perintah klik tombol "Our Converter"'; echo '<p>';
