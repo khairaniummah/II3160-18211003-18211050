@@ -3,9 +3,9 @@ ini_set('auto_detect_line_endings', true);
 require_once('./Converter.php');
 $proc = new XsltProcessor;
 $t = new Converter;
-echo 'Untuk menampilkan tabel menu: http://localhost/II3160-18211003-18211050/punya_sendiri/?search=menu '; echo '<p>';
-echo 'Untuk menampilkan chat log: http://localhost/II3160-18211003-18211050/punya_sendiri/?search=chat '; echo '<p>';
-echo 'Untuk menampilkan tabel pegawai: http://localhost/II3160-18211003-18211050/punya_sendiri/?search=pegawai '; echo '<p>';
+echo 'Untuk menampilkan tabel menu: http://sti-itb.org/II3160-18211003-18211050/punya_sendiri/?search=menu '; echo '<p>';
+echo 'Untuk menampilkan chat log: http://sti-itb.org/II3160-18211003-18211050/punya_sendiri/?search=chat '; echo '<p>';
+echo 'Untuk menampilkan tabel pegawai: http://sti-itb.org/II3160-18211003-18211050/punya_sendiri/?search=pegawai '; echo '<p>';
 
 if ($_GET["search"] == 'menu'){ 
 	ob_end_clean();
