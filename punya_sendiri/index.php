@@ -35,7 +35,7 @@ if ($_GET["search"] == 'chat'){
 }
 if ($_GET["search"] == 'pegawai'){ 
 	ob_end_clean();
-	$convert = $t->sqlConverter();
+	//$convert = $t->sqlConverter();
 	$doc = new DOMDocument();
 	$doc->load('datasql.xsl');
 	$proc->importStylesheet($doc);
